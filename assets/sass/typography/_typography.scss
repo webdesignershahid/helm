@@ -1,0 +1,76 @@
+@include xxxl-devices {
+    .container {
+        max-width: 1650px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    line-height: 1.75rem;
+    font-size: 1rem;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: var(--color__black);
+}
+a:hover {
+    text-decoration: none;
+}
+select {
+    box-shadow: none;
+    outline: none;
+}
+
+// Heading
+h6, h5, h4, h3, h2, h1 {
+    clear: both;
+    margin: 0;
+	color: var(--color__black);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-primary);
+}
+
+// Paragraph
+p {
+    margin:  0;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-family: var(--font-primary);
+    color: var(--color__text);
+    font-weight: 300;
+
+    @media (max-width: 767px) {
+        font-size: 0.87rem;
+        line-height: 1.5rem;
+    }
+}
+
+// Section Title
+.section-title {
+    margin-bottom: 40px;
+    @include lg-devices {
+        margin-bottom: 50px;
+    }
+    .title {
+        font-size: 34px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #24141a;
+        font-weight: 500;
+        
+        @include lg-devices {
+            font-size: 46px;
+            letter-spacing: 5px;
+        }
+
+    }
+}

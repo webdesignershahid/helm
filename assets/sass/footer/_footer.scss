@@ -1,0 +1,47 @@
+footer {
+    .footer-top {
+        background-color: rgba(#231319, 0.05);
+        padding: 50px 0;
+
+        .widget {
+            address {
+                margin: 0;
+                font-size: 14px;
+                @include max-md {
+                    font-size: 13px;
+                }
+            }
+            a {
+                font-size: 14px;
+                @include max-md {
+                    font-size: 13px;
+                }
+
+                &:hover {
+                    color: var(--color__dark__red);
+                }
+            }
+            h6 {
+                font-size: 13px;
+                @include lg-devices {
+                    margin-top: 6px;
+                    font-size: 14px;
+                }
+            }
+            .icon {
+                width: 20px;
+                @include lg-devices {
+                    width: 25px;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: var(--color__dark__red);
+        padding: 10px 0;
+
+        p {
+            color: #fff;
+        }
+    }
+}

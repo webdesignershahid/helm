@@ -1,0 +1,72 @@
+header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s ease-out 0s;
+    @include lg-devices {
+        top: 50px;
+    }
+
+    .navbar-brand {
+        img {
+            filter: grayscale(1) brightness(100);
+        }
+    }
+    .btn_menu_toggler {
+        border: 0;
+        background-color: transparent;
+        // width: 50px;
+        width: 45px;
+        // height: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        span {
+            // height: 3px;
+            height: 2px;
+            width: 100%;
+            background-color: var(--color__white);
+        }
+    }
+    .navbar-collapse {
+        background-color: var(--color__black);
+        padding: 15px 20px;
+
+        ul {
+            li {
+                a {
+                    color: var(--color__white);
+                    transition: all 0.3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:hover, &:focus {
+                        color: var(--color__dark__red);
+                    }
+
+                }
+            }
+            .submenu {
+                margin-left: 25px;
+
+                li {
+                    a {
+                        padding: 10px 0;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    &.header__sticky {
+        background-color: var(--color__black);
+        top: 0;
+        padding: 10px 0;
+    }
+}
